@@ -89,14 +89,15 @@
 /* Fade-in animation */
 .fade-in {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-   }
+  transform: translateY(40px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+  }
 
 .fade-in.show {
   opacity: 1;
   transform: translateY(0);
-   }
+  }
+
 
 
   </style>
@@ -458,19 +459,28 @@
 
   </div>
 
-<script>
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      }
-    });
-  }, { threshold: 0.1 });
+
+ <script>
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+      });
+    },
+    {
+      threshold: 0.25
+    }
+  );
 
   document.querySelectorAll(".fade-in").forEach(el => {
     observer.observe(el);
   });
 </script>
+
 
 
   
