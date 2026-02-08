@@ -18,6 +18,39 @@
     transform: translateY(-4px);
     border-color: #22d3ee;
     }
+
+.footer-gmail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #22d3ee;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-gmail svg {
+  transition: all 0.3s ease;
+}
+
+.footer-gmail span {
+  transition: all 0.3s ease;
+}
+
+.footer-gmail:hover {
+  transform: translateY(-3px);
+}
+
+.footer-gmail:hover span {
+  color: #38bdf8;
+  text-shadow: 0 0 8px rgba(34,211,238,0.9);
+}
+
+.footer-gmail:hover svg path {
+  stroke: #38bdf8;
+  filter: drop-shadow(0 0 8px rgba(34,211,238,0.9));
+}
+    
+  
   </style>
   <style>
   .project-card {
@@ -106,9 +139,12 @@
   transition: transform 0.3s ease;
    }
 
-.footer-icon:hover {
-  transform: translateY(-6px);
-   }
+.footer-icon:hover svg {
+  stroke: #38bdf8;
+  filter: drop-shadow(0 0 8px rgba(34,211,238,0.9));
+  transform: translateY(-3px);
+}
+
 body {
   padding-top: 80px;
   }
@@ -648,21 +684,21 @@ body {
     gap:30px;
   ">
 
-    <!-- Gmail -->
-    <div style="display:flex; align-items:center; gap:10px;">
+      <!-- Gmail -->
+<a href="mailto:pulipati.sarath8@gmail.com"
+   class="footer-gmail"
+   aria-label="Email">
 
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-          <path d="M4 6h16v12H4z" stroke="#22d3ee" stroke-width="1.5"/>
-          <path d="M4 6l8 6 8-6" stroke="#22d3ee" stroke-width="1.5"/>
-          </svg>
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+    <path d="M4 6h16v12H4z" stroke="#22d3ee" stroke-width="1.5"/>
+    <path d="M4 6l8 6 8-6" stroke="#22d3ee" stroke-width="1.5"/>
+  </svg>
 
-            <a href="mailto:pulipati.sarath8@gmail.com"
-              class="footer-icon">
-             pulipati.sarath8@gmail.com
-            </a>
+  <span>pulipati.sarath8@gmail.com</span>
+
+</a>
 
 
-      </div>
 
 
     <!-- LinkedIn -->
