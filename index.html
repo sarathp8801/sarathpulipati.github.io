@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+  .skill {
+    border: 1px solid #444;
+    border-radius: 6px;
+    padding: 8px;
+    margin: 8px 0;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+
+  .skill:hover {
+    transform: translateY(-4px);
+    border-color: #22d3ee;
+  }
+  </style>
+
   <meta charset="UTF-8">
   <title>Sarath Chandra Pulipati</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
@@ -52,72 +67,76 @@
   Portfolio website coming soon.
 </p>
 
-<!-- SKILLS SECTION -->
+
+  <!-- SKILLS SECTION -->
 <div id="skills" style="padding:120px 20px; text-align:center;">
 
-  <h2 style="
-  font-size:32px;
-  letter-spacing:1px;
-  margin-bottom:10px;
-  ">
-  Skills
-  </h2>
+  <!-- HEADER -->
+  <h2 style="font-size:32px; letter-spacing:1px; margin-bottom:10px;">Skills</h2>
+  <div style="width:80px; height:3px; background:#22d3ee; margin:0 auto 50px auto;"></div>
 
-<div style="
-  width:80px;
-  height:3px;
-  background:#22d3ee;
-  margin:0 auto 40px auto;
-  border-radius:2px;
-"></div>
-
-
-  <!-- GRID CONTAINER -->
+  <!-- CATEGORY GRID -->
   <div style="
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap:20px;
-    max-width:900px;
-    margin:40px auto;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap:40px;
+    max-width:1100px;
+    margin:0 auto;
   ">
 
     <!-- SYSTEMS & IDENTITY -->
-    <div style="border:1px solid #22d3ee; border-radius:8px; padding:12px;">Windows Server</div>
-    <div style="border:1px solid #22d3ee; border-radius:8px; padding:12px;">Active Directory</div>
-    <div style="border:1px solid #22d3ee; border-radius:8px; padding:12px;">Group Policy (GPO)</div>
-    <div style="border:1px solid #22d3ee; border-radius:8px; padding:12px;">Microsoft Intune</div>
-    <div style="border:1px solid #22d3ee; border-radius:8px; padding:12px;">Microsoft Entra ID</div>
+    <div style="border:1px solid #22d3ee; border-radius:12px; padding:25px;">
+      <h3>Systems & Identity</h3>
+      <div class="skill">Windows Server</div>
+      <div class="skill">Active Directory (AD DS)</div>
+      <div class="skill">Group Policy (GPO)</div>
+      <div class="skill">Microsoft Intune</div>
+      <div class="skill">Microsoft Entra ID</div>
+    </div>
 
     <!-- NETWORKING -->
-    <div style="border:1px solid #3b82f6; border-radius:8px; padding:12px;">Cisco Networking</div>
-    <div style="border:1px solid #3b82f6; border-radius:8px; padding:12px;">Enterprise Network Design</div>
-    <div style="border:1px solid #3b82f6; border-radius:8px; padding:12px;">Subnetting</div>
-    <div style="border:1px solid #3b82f6; border-radius:8px; padding:12px;">VLANs</div>
-    <div style="border:1px solid #3b82f6; border-radius:8px; padding:12px;">DNS & DHCP</div>
+    <div style="border:1px solid #3b82f6; border-radius:12px; padding:25px;">
+      <h3>Networking</h3>
+      <div class="skill">Cisco Networking</div>
+      <div class="skill">Enterprise Network Design</div>
+      <div class="skill">Subnetting</div>
+      <div class="skill">VLANs</div>
+      <div class="skill">DNS & DHCP</div>
+    </div>
 
     <!-- SECURITY -->
-    <div style="border:1px solid #a78bfa; border-radius:8px; padding:12px;">Ethical Hacking</div>
-    <div style="border:1px solid #a78bfa; border-radius:8px; padding:12px;">Vulnerability Assessment</div>
-    <div style="border:1px solid #a78bfa; border-radius:8px; padding:12px;">Access Control</div>
-    <div style="border:1px solid #a78bfa; border-radius:8px; padding:12px;">Digital Forensics</div>
-    <div style="border:1px solid #a78bfa; border-radius:8px; padding:12px;">Network Security</div>
+    <div style="border:1px solid #a78bfa; border-radius:12px; padding:25px;">
+      <h3>Security</h3>
+      <div class="skill">CompTIA Security+</div>
+      <div class="skill">Ethical Hacking</div>
+      <div class="skill">Vulnerability Assessment</div>
+      <div class="skill">Access Control</div>
+      <div class="skill">Digital Forensics</div>
+    </div>
 
     <!-- PROGRAMMING & DATABASES -->
-    <div style="border:1px solid #22d3ee; border-radius:8px; padding:12px;">Python</div>
-    <div style="border:1px solid #22d3ee; border-radius:8px; padding:12px;">Flask</div>
-    <div style="border:1px solid #22d3ee; border-radius:8px; padding:12px;">SQL</div>
-    <div style="border:1px solid #22d3ee; border-radius:8px; padding:12px;">MySQL</div>
-    <div style="border:1px solid #22d3ee; border-radius:8px; padding:12px;">Database Design</div>
+    <div style="border:1px solid #22d3ee; border-radius:12px; padding:25px;">
+      <h3>Programming & Databases</h3>
+      <div class="skill">Python</div>
+      <div class="skill">Flask</div>
+      <div class="skill">SQL</div>
+      <div class="skill">MySQL</div>
+      <div class="skill">Database Design</div>
+    </div>
 
-    <!-- PLATFORMS -->
-    <div style="border:1px solid #3b82f6; border-radius:8px; padding:12px;">Linux</div>
-    <div style="border:1px solid #3b82f6; border-radius:8px; padding:12px;">Kali Linux</div>
-    <div style="border:1px solid #3b82f6; border-radius:8px; padding:12px;">VirtualBox</div>
-    <div style="border:1px solid #3b82f6; border-radius:8px; padding:12px;">IIS</div>
-    <div style="border:1px solid #3b82f6; border-radius:8px; padding:12px;">FSRM</div>
+    <!-- PLATFORMS & TOOLS -->
+    <div style="border:1px solid #3b82f6; border-radius:12px; padding:25px;">
+      <h3>Platforms & Tools</h3>
+      <div class="skill">Linux</div>
+      <div class="skill">Kali Linux</div>
+      <div class="skill">VirtualBox</div>
+      <div class="skill">IIS</div>
+      <div class="skill">FSRM</div>
+    </div>
 
   </div>
 </div>
+
 
 
 
