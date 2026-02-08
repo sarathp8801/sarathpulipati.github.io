@@ -68,6 +68,24 @@
   font-size: 14px;
   opacity: 0.85;
   }
+.experience-card {
+  border: 1px solid #444;
+  border-radius: 12px;
+  padding: 35px 30px;
+  background: #0b0f14;
+  max-width: 1100px;
+  margin: 0 auto;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+   }
+
+.experience-card:hover {
+  transform: translateY(-6px);
+  border-color: #22d3ee;
+   }
+  
+.experience-card h3 {
+  margin-bottom: 5px;
+   }
 
 
   </style>
@@ -362,6 +380,43 @@
   </div>
 </div>
 
+<!-- EXPERIENCE SECTION -->
+<div id="experience" style="padding:120px 20px; text-align:center;">
+
+  <!-- HEADER -->
+  <h2 style="font-size:32px; letter-spacing:1px; margin-bottom:10px;">
+    Experience
+  </h2>
+  <div style="width:80px; height:3px; background:#22d3ee; margin:0 auto 50px auto;"></div>
+
+  <!-- EXPERIENCE CARD -->
+  <div class="experience-card">
+
+    <h3>Graduate Teaching Assistant – Windows Network Administration</h3>
+    <p style="margin:6px 0; opacity:0.85;">
+      University of New Haven · West Haven, CT
+    </p>
+    <p style="margin-bottom:20px; font-size:14px;">
+      Jan 2025 – Dec 2025
+    </p>
+
+    <ul style="
+      text-align:left;
+      max-width:900px;
+      margin:0 auto;
+      line-height:1.8;
+      font-size:15px;
+    ">
+      <li>Assisted in administering enterprise-style Windows Server 2022 environments using virtualized infrastructure.</li>
+      <li>Configured and managed Active Directory (AD DS), including users, groups, OUs, and delegated access control.</li>
+      <li>Implemented and tested Group Policy Objects (GPOs) such as logon banners, desktop policies, and security configurations.</li>
+      <li>Configured core network services including DNS, DHCP, IIS, and file services within a simulated enterprise environment.</li>
+      <li>Supported endpoint management concepts including roaming profiles, storage quota management (FSRM), and access permissions.</li>
+      <li>Assisted students in troubleshooting Windows client and server issues across Windows 10 and Windows 11 systems.</li>
+    </ul>
+
+  </div>
+</div>
 
   
 <!-- RESUME SECTION -->
