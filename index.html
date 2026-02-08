@@ -53,116 +53,57 @@
 </p>
 
 <!-- SKILLS SECTION -->
-<div id="skills" style="padding-top:120px; text-align:center;">
+<div id="skills" style="padding:120px 20px; text-align:center;">
 
   <h2>Skills</h2>
 
-  <!-- SKILLS CONTAINER -->
+  <!-- GRID CONTAINER -->
   <div style="
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap:20px;
     max-width:900px;
     margin:40px auto;
   ">
 
     <!-- SYSTEMS & IDENTITY -->
-    <div style="
-      border:1px solid #22d3ee;
-      border-radius:8px;
-      padding:20px;
-      margin:15px;
-      width:260px;
-      transition:transform 0.3s;
-    "
-    onmouseover="this.style.transform='translateY(-6px)'"
-    onmouseout="this.style.transform='translateY(0)'">
-      <h3>Systems & Identity</h3>
-      <p>Windows Server</p>
-      <p>Active Directory (AD DS)</p>
-      <p>Group Policy Objects (GPO)</p>
-      <p>Microsoft Entra ID</p>
-      <p>Microsoft Intune</p>
-    </div>
+    <div style="border:1px solid #22d3ee; border-radius:8px; padding:12px;">Windows Server</div>
+    <div style="border:1px solid #22d3ee; border-radius:8px; padding:12px;">Active Directory</div>
+    <div style="border:1px solid #22d3ee; border-radius:8px; padding:12px;">Group Policy (GPO)</div>
+    <div style="border:1px solid #22d3ee; border-radius:8px; padding:12px;">Microsoft Intune</div>
+    <div style="border:1px solid #22d3ee; border-radius:8px; padding:12px;">Microsoft Entra ID</div>
 
     <!-- NETWORKING -->
-    <div style="
-      border:1px solid #3b82f6;
-      border-radius:8px;
-      padding:20px;
-      margin:15px;
-      width:260px;
-      transition:transform 0.3s;
-    "
-    onmouseover="this.style.transform='translateY(-6px)'"
-    onmouseout="this.style.transform='translateY(0)'">
-      <h3>Networking</h3>
-      <p>Enterprise Network Design</p>
-      <p>Subnetting</p>
-      <p>VLANs</p>
-      <p>Routing Concepts</p>
-      <p>DNS & DHCP</p>
-    </div>
+    <div style="border:1px solid #3b82f6; border-radius:8px; padding:12px;">Cisco Networking</div>
+    <div style="border:1px solid #3b82f6; border-radius:8px; padding:12px;">Enterprise Network Design</div>
+    <div style="border:1px solid #3b82f6; border-radius:8px; padding:12px;">Subnetting</div>
+    <div style="border:1px solid #3b82f6; border-radius:8px; padding:12px;">VLANs</div>
+    <div style="border:1px solid #3b82f6; border-radius:8px; padding:12px;">DNS & DHCP</div>
 
     <!-- SECURITY -->
-    <div style="
-      border:1px solid #a78bfa;
-      border-radius:8px;
-      padding:20px;
-      margin:15px;
-      width:260px;
-      transition:transform 0.3s;
-    "
-    onmouseover="this.style.transform='translateY(-6px)'"
-    onmouseout="this.style.transform='translateY(0)'">
-      <h3>Security</h3>
-      <p>CompTIA Security+</p>
-      <p>Ethical Hacking</p>
-      <p>Vulnerability Assessment</p>
-      <p>Access Control</p>
-      <p>Digital Forensics</p>
-    </div>
+    <div style="border:1px solid #a78bfa; border-radius:8px; padding:12px;">Ethical Hacking</div>
+    <div style="border:1px solid #a78bfa; border-radius:8px; padding:12px;">Vulnerability Assessment</div>
+    <div style="border:1px solid #a78bfa; border-radius:8px; padding:12px;">Access Control</div>
+    <div style="border:1px solid #a78bfa; border-radius:8px; padding:12px;">Digital Forensics</div>
+    <div style="border:1px solid #a78bfa; border-radius:8px; padding:12px;">Network Security</div>
 
     <!-- PROGRAMMING & DATABASES -->
-    <div style="
-      border:1px solid #22d3ee;
-      border-radius:8px;
-      padding:20px;
-      margin:15px;
-      width:260px;
-      transition:transform 0.3s;
-    "
-    onmouseover="this.style.transform='translateY(-6px)'"
-    onmouseout="this.style.transform='translateY(0)'">
-      <h3>Programming & Databases</h3>
-      <p>Python</p>
-      <p>Flask</p>
-      <p>SQL</p>
-      <p>MySQL</p>
-      <p>Database Design</p>
-    </div>
+    <div style="border:1px solid #22d3ee; border-radius:8px; padding:12px;">Python</div>
+    <div style="border:1px solid #22d3ee; border-radius:8px; padding:12px;">Flask</div>
+    <div style="border:1px solid #22d3ee; border-radius:8px; padding:12px;">SQL</div>
+    <div style="border:1px solid #22d3ee; border-radius:8px; padding:12px;">MySQL</div>
+    <div style="border:1px solid #22d3ee; border-radius:8px; padding:12px;">Database Design</div>
 
-    <!-- PLATFORMS & TOOLS -->
-    <div style="
-      border:1px solid #3b82f6;
-      border-radius:8px;
-      padding:20px;
-      margin:15px;
-      width:260px;
-      transition:transform 0.3s;
-    "
-    onmouseover="this.style.transform='translateY(-6px)'"
-    onmouseout="this.style.transform='translateY(0)'">
-      <h3>Platforms & Tools</h3>
-      <p>Linux</p>
-      <p>Kali Linux</p>
-      <p>VirtualBox</p>
-      <p>IIS</p>
-      <p>FSRM</p>
-    </div>
+    <!-- PLATFORMS -->
+    <div style="border:1px solid #3b82f6; border-radius:8px; padding:12px;">Linux</div>
+    <div style="border:1px solid #3b82f6; border-radius:8px; padding:12px;">Kali Linux</div>
+    <div style="border:1px solid #3b82f6; border-radius:8px; padding:12px;">VirtualBox</div>
+    <div style="border:1px solid #3b82f6; border-radius:8px; padding:12px;">IIS</div>
+    <div style="border:1px solid #3b82f6; border-radius:8px; padding:12px;">FSRM</div>
 
   </div>
 </div>
+
 
 
   <!-- PROJECTS SECTION -->
