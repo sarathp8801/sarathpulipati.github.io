@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #0b0f14;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+section {
+  padding: 80px 10%;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding-top: 120px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 10px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.btn.primary {
+  background: #3b82f6;
+  color: white;
+}
+
+.btn.secondary {
+  border: 1px solid #22d3ee;
+  color: #22d3ee;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 30px;
+}
+
+.skill {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.skill i {
+  font-size: 48px;
+  color: #22d3ee;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+}
+
+.project-card {
+  background: #111827;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.project-card a {
+  color: #a78bfa;
+}
